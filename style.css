@@ -1,0 +1,373 @@
+
+
+ *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    font-family: sans-serif;
+    background: hsl(36, 100%, 99%);
+}
+.cover{
+    width: 100%;
+    height: 128vh;
+    background: rgba(108, 108, 151, 0.347);
+    position: absolute;
+    top: 0;
+    display: none;
+}
+nav{
+    padding: 30px 7% 0 10%;
+    height: 80px;
+    width: 100vw;
+}
+.logo{
+    width: 40px;
+    margin-top: 2%;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 20px;
+}
+nav ul li a{
+    color: hsl(236, 13%, 42%);
+    font-size: 1rem;
+    transition: .3s;
+}
+#menu-bar,#cancel-bar{
+    float: right;
+    margin-top: 4%;
+    display: none;
+    transition: .1s;
+}
+#cancel-bar{
+    object-fit: cover;
+}
+main{
+    display: flex;
+    padding: 30px 10%;
+    justify-content: space-between;
+    margin-top: 3%;
+    width: 100vw;
+
+}
+.middle-left{
+    display: flex;
+    flex-direction: column;
+
+
+}
+.image-container{
+    display: flex;
+    width: 52vw;
+} 
+.image{
+    display: flex;
+    object-fit: cover;
+    object-position: center;
+    min-width: 100%;
+    height: auto;
+}
+.image-mobile{
+    display: none;
+}
+.middleInfo{
+    display: flex;
+    padding-top: 5%;
+    justify-content: space-between;
+}
+h1{
+    line-height: 50px;
+    font-size: 52px;
+    width: 75%;
+}
+.middleInfoRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 80%;
+}
+.middleInfoRight p{
+    display: block;
+    height: auto;
+    float: right;
+    width: 85%;
+    line-height: 25px;
+    margin-bottom: 28px;
+}
+button{
+    width: 12vw;
+    height: auto;
+    padding: 3% 0 3% 0;
+    text-transform: uppercase;
+    color: hsl(36, 100%, 99%);
+    background-color: hsl(5, 85%, 63%);
+    border: none;
+    letter-spacing: 4px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+button:hover{
+    background-color: hsl(240, 100%, 5%);
+}
+.middle-right{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    background-color: hsl(240, 100%, 5%);
+    justify-content: space-between;
+    padding: 20px;
+    width: 48vw;
+}
+.h2One{
+    color: hsl(35, 77%, 62%);
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+h3{
+    color: hsl(36, 100%, 99%);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+h3:hover{
+    color: hsl(35, 77%, 62%);
+}
+.middle-right p{
+    color: hsl(233, 8%, 79%);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.middle-right-one{
+    border-bottom: 1px solid hsl(230, 4%, 68%);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 10%;
+    gap: 30px;
+}
+.footerItem{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 30vw;
+}
+.footerDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerItem img{
+    width: 7vw;
+    height: 18vh;
+}
+.footerItem h2{
+    font-size: 1.8rem;
+    color: hsl(233, 8%, 79%);
+}
+.footerItem h5{
+    color: hsl(240, 100%, 5%);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.footerItem h5:hover{
+    color: hsl(5, 85%, 63%);
+}
+.footerItem p{
+    line-height: 30px;
+}
+.attribution{
+    font-size: 15px;
+}
+
+@media (max-width:700px){
+    nav ul li a{
+        font-size: 16px;
+    }
+    #menu-bar{
+        display: block;
+        width: 5vw;
+        height: auto;
+        z-index: 100;
+    }
+    ul{
+        display: none;
+    }
+    .checked{
+        display: block;
+    }
+    .footerItem{
+        display: block;
+    }
+    #footerthree img{
+        margin-top: 0vh;
+    }
+
+}
+@media (max-width:700px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: absolute;
+        width: 40%;
+        height: 180vh;
+        background: hsl(36, 100%, 99%);
+        top: 80px;
+        right: -20px; 
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 1px;
+
+    }
+    nav ul li a{
+        color: hsl(240, 100%, 5%);
+    }
+    .checked{
+        display: block;
+        transition-duration: 1s;
+    }
+}
+@media (max-width:650px){
+    body{
+        width: 100vw;
+    }
+    .logo{
+        position: absolute;
+        top: 3%;
+        left: 4%;
+    }
+    #menu-bar,#cancel-bar{
+        position: absolute;
+        top: 2%;
+        right: 5%;
+        width: 10vw;
+        z-index: 10;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        padding-left:40px ;
+    }
+    .image-container{
+        width: 90vw;
+        display: block;
+        margin-left: -18px;
+    }
+    .image{
+        display: none;
+    }
+    .image-mobile{
+        display: block;
+        width: 90vw;
+
+    }
+    .middleInfo{
+        display: flex;
+        flex-direction: column;
+        margin-left: -5%;
+        padding-left: 20px;
+        width: 94vw;
+    }
+    .middleInfoLeft h1{
+        display: block;
+        font-size: 2.8rem;
+        width:100%;
+        line-height: 40px;
+    }
+    .middleInfoRight{
+        width:90vw;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+    .middleInfoRight button{
+        width: 50vw;
+        margin-bottom: 15%;
+    }
+    .middle-right{
+        width: 88vw;
+        margin-left: -16px;
+        gap: 30px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerItem{
+        display: flex;
+        width: 90vw;
+        height: 26vh;
+        margin-left: 10px;
+    }
+    .footerItem img{
+        width: 23vw;
+        height: 18vh;
+    }
+    .footerDetails{
+        height: 75%;
+        gap: 10px;
+    }
+    .footerItem h2{
+        font-size: 1.6rem;
+    }
+    .footerItem h5{
+        font-size: 1.1rem;
+    }
+    .footerItem p{
+        width: 90%;
+        font-size: 0.9rem;
+        line-height: 25px;
+    }
+    ul{
+        width: 65%;
+        height: 300vh;
+        text-align: left;
+        z-index: 0;
+        margin-top: -22%;
+        padding-top:25% ;
+    }
+    nav ul li {
+        line-height: 1px;
+        margin-left: 30px;
+    }
+    nav ul li a{
+        color: hsl(240, 100%, 5%);
+        font-weight: 600;
+    }
+    .attribution{
+        width: 100vw;
+    }
+    .release{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
